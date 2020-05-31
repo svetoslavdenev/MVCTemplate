@@ -28,6 +28,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Data\MVCTemplate.DataAccess\MVCTemplate.DataAccess.csproj" />
     <ProjectReference Include="..\..\Data\MVCTemplate.Domain\MVCTemplate.Domain.csproj" />
+    <ProjectReference Include="..\..\Data\MVCTemplate.Repositories\MVCTemplate.Repositories.csproj" />
     <ProjectReference Include="..\..\Services\MVCTemplate.Services\MVCTemplate.Services.csproj" />
     <ProjectReference Include="..\MVCTemplate.ViewModels\MVCTemplate.ViewModels.csproj" />
   </ItemGroup>

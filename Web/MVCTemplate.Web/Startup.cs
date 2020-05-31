@@ -8,6 +8,8 @@
     using Microsoft.Extensions.Hosting;
     using MVCTemplate.DataAccess;
     using MVCTemplate.Domain.Identity;
+    using MVCTemplate.Repositories.Common;
+    using MVCTemplate.Repositories.Common.Interfaces;
 
     public class Startup
     {
@@ -28,6 +30,8 @@
                 .AddRoles<ApplicationRole>().AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddControllersWithViews();
             services.AddRazorPages();
+
+            services.AddScoped(typeof(IApplicationBaseRepository<>), typeof(ApplicationBaseRepository<>));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
